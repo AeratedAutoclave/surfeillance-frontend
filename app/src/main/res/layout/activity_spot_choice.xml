@@ -8,12 +8,43 @@
 <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.SpotChoiceActivity">
+        tools:context=".ui.SpotChoiceActivity"
+        android:padding="50dp">
+
+    <ImageView
+            android:id="@+id/surfeillancelogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/app_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="217dp"
+            tools:layout_editor_absoluteX="104dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
-
+            android:id="@+id/recyclerViewOfSpots"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="350dp"
+            app:layout_constraintTop_toBottomOf="@id/surfeillancelogo"
+            tools:layout_editor_absoluteX="67dp"
+            android:background="@drawable/border" android:layout_marginTop="50dp" android:scrollbars="vertical"
+    />
+
+    <TextView
+            android:id="@+id/spotChoiceActivityRef"
+            android:text="(2) SpotChoiceActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:backgroundTint="@color/blue"/>
 
 
 
