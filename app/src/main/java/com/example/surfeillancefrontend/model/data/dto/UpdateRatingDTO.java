@@ -1,4 +1,4 @@
-package com.example.surfeillancefrontend.model.data.DTO;
+package com.example.surfeillancefrontend.model.data.dto;
 
 public class UpdateRatingDTO {
 

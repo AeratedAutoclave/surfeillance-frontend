@@ -1,7 +1,7 @@
 
 package com.example.surfeillancefrontend.service;
 
-import com.example.surfeillancefrontend.model.data.DTO.UserInfoHolder;
+import com.example.surfeillancefrontend.model.data.dto.UserInfoHolder;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -18,6 +18,9 @@ public class ApiClient {
     private static Retrofit retrofit;
     private static String token;
 
+
+    private ApiClient() {
+    }
 
     public static Retrofit getInstance() {
         if (retrofit == null) {

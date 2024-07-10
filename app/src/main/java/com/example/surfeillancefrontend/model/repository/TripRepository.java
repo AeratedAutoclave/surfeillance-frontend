@@ -3,8 +3,8 @@ package com.example.surfeillancefrontend.model.repository;
 import android.app.Application;
 import android.util.Log;
 import androidx.lifecycle.MutableLiveData;
-import com.example.surfeillancefrontend.model.data.DTO.AppUser;
-import com.example.surfeillancefrontend.model.data.DTO.UpdateRatingDTO;
+import com.example.surfeillancefrontend.model.data.dto.AppUser;
+import com.example.surfeillancefrontend.model.data.dto.UpdateRatingDTO;
 import com.example.surfeillancefrontend.model.data.Location;
 import com.example.surfeillancefrontend.model.data.NewTrip;
 import com.example.surfeillancefrontend.model.data.Spot;
@@ -78,7 +78,7 @@ public class TripRepository {
                 // spot ID to be collected from backend pls
                 .withSpot(new Spot( (int) location.getSpotId(), location.getName()))
                 // userid also to come in from backend/session info
-                .withUser(new AppUser("1"))
+                .withUser(new AppUser(1))
                 .withLocation(location)
                 .build();
         Log.i("pre call", tripToAdd.toString());

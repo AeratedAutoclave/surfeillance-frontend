@@ -2,8 +2,8 @@ package com.example.surfeillancefrontend.model.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.example.surfeillancefrontend.model.data.DTO.AppUser;
-import com.example.surfeillancefrontend.model.data.DTO.AppUserDTO;
+import com.example.surfeillancefrontend.model.data.dto.AppUser;
+import com.example.surfeillancefrontend.model.data.dto.AppUserDTO;
 
 public class NewTrip implements Parcelable {
     private Integer tripId;

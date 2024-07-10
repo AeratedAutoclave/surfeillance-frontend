@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.surfeillancefrontend.MainActivity;
 import com.example.surfeillancefrontend.R;
-import com.example.surfeillancefrontend.model.data.DTO.UserInfoHolder;
+import com.example.surfeillancefrontend.model.data.dto.UserInfoHolder;
 import com.example.surfeillancefrontend.model.data.Trip;
 import com.google.android.material.textfield.TextInputEditText;
 

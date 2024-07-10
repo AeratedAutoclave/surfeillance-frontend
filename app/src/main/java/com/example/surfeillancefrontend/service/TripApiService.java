@@ -1,6 +1,6 @@
 package com.example.surfeillancefrontend.service;
 
-import com.example.surfeillancefrontend.model.data.DTO.UpdateRatingDTO;
+import com.example.surfeillancefrontend.model.data.dto.UpdateRatingDTO;
 import com.example.surfeillancefrontend.model.data.NewTrip;
 import com.example.surfeillancefrontend.model.data.Trip;
 import retrofit2.Call;

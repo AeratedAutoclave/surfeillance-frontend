@@ -1,7 +1,7 @@
 package com.example.surfeillancefrontend.service;
 
 import android.util.Log;
-import com.example.surfeillancefrontend.model.data.DTO.AppUser;
+import com.example.surfeillancefrontend.model.data.dto.AppUser;
 import com.example.surfeillancefrontend.model.data.Location;
 import com.example.surfeillancefrontend.model.data.NewTrip;
 import com.example.surfeillancefrontend.model.data.Spot;

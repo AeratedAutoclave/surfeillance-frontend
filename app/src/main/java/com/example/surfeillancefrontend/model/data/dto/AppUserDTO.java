@@ -1,11 +1,11 @@
-package com.example.surfeillancefrontend.model.data.DTO;
+package com.example.surfeillancefrontend.model.data.dto;
 
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 public class AppUserDTO implements Parcelable {
-    private int id;
+    private String googleId;
     private String userName;
     private String profileText;
     private String location;
@@ -14,12 +14,12 @@ public class AppUserDTO implements Parcelable {
     private String email;
     private String token;
 
-    public int getId() {
-        return id;
+    public String getGoogle_id() {
+        return googleId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setGoogle_id(String googleId) {
+        this.googleId = googleId;
     }
 
     public String getUserName() {
@@ -78,8 +78,8 @@ public class AppUserDTO implements Parcelable {
         this.token = token;
     }
 
-    public AppUserDTO(int id, String userName, String profileText, String location, String skillLevel, String imageUrl, String email, String token) {
-        this.id = id;
+    public AppUserDTO(String googleId,String userName, String profileText, String location, String skillLevel, String imageUrl, String email, String token) {
+        this.googleId = googleId;
         this.userName = userName;
         this.profileText = profileText;
         this.location = location;
@@ -89,12 +89,12 @@ public class AppUserDTO implements Parcelable {
         this.token = token;
     }
 
-    public AppUserDTO(int id) {
-        this.id = id;
+    public AppUserDTO(String googleId) {
+        this.googleId = googleId;
     }
 
     protected AppUserDTO(Parcel in) {
-        id = in.readInt();
+       googleId = in.readString();
         userName = in.readString();
         profileText = in.readString();
         location = in.readString();
@@ -118,7 +118,7 @@ public class AppUserDTO implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(id);
+        dest.writeString(googleId);
         dest.writeString(userName);
         dest.writeString(profileText);
         dest.writeString(location);
